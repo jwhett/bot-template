@@ -30,7 +30,6 @@ client.login(token);
 
 // Functions
 function handleCommands(message) {
-	if (!isMod(message, message.author)) return;
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const command = args.shift().toLowerCase();
 
@@ -45,11 +44,6 @@ function handleCommands(message) {
 		status(message);
 		break;
 	}
-}
-
-function isMod(message, user) {
-	const member = message.guild.member(user);
-	return member && member.roles.cache.some(r => r.name === modRole);
 }
 
 function disable() {
