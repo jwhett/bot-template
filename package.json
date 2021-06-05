@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/jwhett/bot-template/issues"
   },
-  "homepage": "https://github.com/jwhett/bot-template#readme"
+  "homepage": "https://github.com/jwhett/bot-template#readme",
   "dependencies": {
     "discord.js": "^12.0.0"
   },
