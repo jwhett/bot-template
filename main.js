@@ -1,12 +1,9 @@
 // Discord setup
 const Discord = require('discord.js');
+const { token, appID, perms, prefix } = require('config.js');
 const client = new Discord.Client();
 
-// Our environment vars
-const token = process.env.token;
-const appID = process.env.appID;
-const perms = process.env.perms;
-const prefix = process.env.prefix;
+// Link to invite the bot
 const invLink = `https://discord.com/oauth2/authorize?client_id=${appID}&scope=bot&permissions=${perms}`;
 
 // Other
